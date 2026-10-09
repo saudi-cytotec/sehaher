@@ -150,3 +150,29 @@ img[src*="sehaher-logo"]{
  .hero{padding:28px 0!important}
  .section .grid,.section .grid.three{grid-template-columns:minmax(0,1fr)!important}
 }
+
+
+/* Last-resort layout normalization for existing markup; no logo asset replacement */
+.header .container.nav{width:min(1440px,94%)!important;min-height:78px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:16px!important}
+.header .brand{display:flex!important;align-items:center!important;flex:0 0 auto!important;max-width:245px!important;width:auto!important;white-space:nowrap!important;gap:9px!important}
+.header .brand img{width:58px!important;height:58px!important;min-width:58px!important;max-width:58px!important;min-height:58px!important;max-height:58px!important;object-fit:contain!important;flex:0 0 58px!important}
+.header .links{display:flex!important;flex:1 1 auto!important;align-items:center!important;justify-content:flex-start!important;gap:6px 12px!important;min-width:0!important;flex-wrap:wrap!important;font-size:clamp(.76rem,.86vw,.9rem)!important;line-height:1.5!important}
+.header .links a{display:inline-block!important;white-space:nowrap!important;flex:0 0 auto!important;padding:6px 0!important}
+.hero-grid{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr)!important;align-items:center!important}
+.hero-grid>div{min-width:0!important}
+.hero-card{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important}
+.hero-card img,.hero-grid img{max-width:100%!important;height:auto!important;object-fit:contain!important}
+@media(max-width:1000px){
+ .header .container.nav{flex-wrap:wrap!important;padding:10px 0!important}
+ .header .links{display:none!important;order:3!important;flex:1 0 100%!important;flex-direction:column!important;align-items:stretch!important;gap:0!important}
+ .header .links.is-open{display:flex!important}
+ .nav-toggle{display:inline-flex!important}
+ .hero-grid{grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:560px){
+ .header .brand img{width:50px!important;height:50px!important;min-width:50px!important;max-width:50px!important;min-height:50px!important;max-height:50px!important;flex-basis:50px!important}
+ .header .brand{max-width:calc(100% - 110px)!important}
+ .header .links a{width:100%!important;white-space:normal!important;padding:10px 12px!important;border-bottom:1px solid var(--line)!important}
+ .hero{padding:26px 0!important}
+ .section .grid,.section .grid.three{grid-template-columns:minmax(0,1fr)!important}
+}
