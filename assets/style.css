@@ -124,3 +124,7 @@ p{margin:0 0 1rem}
 .grid>.card:after{content:"اقرئي المقال ←";display:block;margin-top:auto;padding-top:10px;color:#07536a;font-weight:800}
 @media(max-width:900px){.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.grid,.grid.three{grid-template-columns:1fr;gap:14px}.grid>.card{min-height:0;padding:19px;border-radius:17px}.grid>.card h3{font-size:1.08rem}}
+
+/* إظهار روابط القائمة العلوية في الصفحة الرئيسية فقط، مع إبقاء روابط التنقل داخل HTML لمحركات البحث */
+body:not(.homepage) .header .links{display:none!important}
+body:not(.homepage) .header .nav-toggle{display:none!important}
