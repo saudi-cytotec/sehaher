@@ -243,3 +243,12 @@ a.whatsapp-float{display:none!important}
 .faq-contact-banner .container{max-width:1020px}
 .faq-contact-banner a{display:block;max-width:980px;margin-inline:auto}
 .faq-contact-banner img{display:block;width:100%;height:auto;border-radius:18px}
+
+
+/* بانر التواصل الموحد في نهاية الصفحات */
+.site-contact-banner{max-width:1000px;margin:36px auto 18px;padding:0 16px;text-align:center;clear:both}
+.site-contact-banner a{display:block;max-width:960px;margin-inline:auto}
+.site-contact-banner img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 8px 24px rgba(10,53,75,.12)}
+.home-hero-banner{max-width:1200px;margin:20px auto 28px;padding:0 18px}
+.home-hero-banner img{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 10px 28px rgba(10,53,75,.12)}
+@media(max-width:640px){.site-contact-banner{margin:24px auto 12px;padding:0 10px}.site-contact-banner img,.home-hero-banner img{border-radius:12px}.home-hero-banner{margin:12px auto 20px;padding:0 10px}}
