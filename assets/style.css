@@ -149,3 +149,50 @@ body:not(.homepage) .topbar,body:not(.homepage) .header{display:none!important}
 body:not(.homepage) .header .links,
 body:not(.homepage) .header .nav-toggle{display:none!important}
 body:not(.homepage) .header .nav{min-height:76px;justify-content:flex-start}
+
+
+/* إزالة أزرار واتساب العائمة من جميع الصفحات */
+.whatsapp,.whatsapp-float{display:none!important}
+
+/* تصميم موسوعة الأسئلة الشائعة */
+.faq-hub{background:#f5f9fc;color:#17354a;padding-bottom:56px}
+.faq-hero{padding:48px 0 38px;background:linear-gradient(135deg,#e8f7fc 0%,#fff 58%,#e9f4ff 100%);border-bottom:1px solid #d6e8f1}
+.faq-hero .container{max-width:1100px}
+.faq-eyebrow{display:inline-block;margin:0 0 12px;padding:7px 13px;border-radius:999px;background:#d5f3ef;color:#087d78;font-size:.88rem;font-weight:800}
+.faq-hero h1{max-width:940px;margin:0 auto 18px;color:#0b3558;font-size:clamp(2rem,4vw,3.1rem);line-height:1.45}
+.faq-lead{max-width:930px;margin:0 auto 22px;color:#4b6478;font-size:1.08rem;line-height:2}
+.faq-warning{max-width:950px;margin:22px auto;padding:18px 22px;border-right:5px solid #d94a55;border-radius:14px;background:#fff1f1;color:#6c2c35;line-height:1.9}
+.faq-jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.faq-jump a{padding:10px 15px;border:1px solid #c9e3ef;border-radius:999px;background:#fff;color:#07536a;font-weight:800}
+.faq-jump a:hover{background:#e8f7fc}
+.faq-content{max-width:1120px;padding-top:30px}
+.faq-section{margin:0 0 30px;padding:clamp(20px,3vw,34px);border:1px solid #e0eaf1;border-radius:22px;background:#fff;box-shadow:0 8px 26px rgba(12,52,79,.045)}
+.faq-section-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:22px}
+.faq-section-head>span{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:14px;background:#dff5f4;color:#087d78;font-weight:900;font-size:1.2rem}
+.faq-section-head h2{margin:0 0 6px;color:#0b4265;font-size:clamp(1.35rem,2.4vw,1.8rem);line-height:1.5}
+.faq-section-head p{margin:0;color:#6a7d8e;line-height:1.8}
+.faq-list{display:grid;gap:12px}
+.faq-list details{border:1px solid #e0eaf1;border-radius:14px;background:#fbfdff;overflow:hidden}
+.faq-list details[open]{border-color:#a8d7e6;background:#fff;box-shadow:0 4px 14px rgba(12,70,100,.05)}
+.faq-list summary{position:relative;cursor:pointer;list-style:none;padding:17px 20px 17px 48px;color:#143f5b;font-weight:850;line-height:1.8}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";position:absolute;left:18px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#e2f4f5;color:#087d78;font-size:1.2rem}
+.faq-list details[open] summary:after{content:"−"}
+.faq-list details p{margin:0;padding:0 20px 20px;color:#4d6376;font-size:1rem;line-height:2}
+.country-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 28px}
+.country-cards a{display:flex;flex-direction:column;gap:8px;padding:20px;border:1px solid #d9e9f2;border-radius:16px;background:linear-gradient(145deg,#fff,#f4fbff);color:#123f5b}
+.country-cards a:hover{border-color:#84cbd6;transform:translateY(-2px)}
+.country-cards strong{font-size:1.05rem;line-height:1.6}
+.country-cards span{color:#60778a;font-size:.91rem;line-height:1.8}
+.faq-section h3{margin:28px 0 12px;color:#0b4265}
+.faq-section>p{line-height:2;color:#4d6376}
+.city-links{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 22px}
+.city-links a{padding:8px 13px;border:1px solid #d9e8f1;border-radius:999px;background:#f7fbfe;color:#175775;font-weight:750}
+.city-links a:hover{background:#e5f6f8;border-color:#9dd8df}
+.faq-sources{margin:0 0 26px;padding:28px;border:1px solid #dce8ef;border-radius:20px;background:#eef7fb}
+.faq-sources h2{margin-top:0;color:#0b4265}
+.faq-sources p,.faq-sources li{line-height:2;color:#4b6478}
+.faq-sources a{color:#076c9a;text-decoration:underline;text-underline-offset:3px}
+.faq-disclaimer{padding:15px 18px;border-right:4px solid #0b8790;border-radius:10px;background:#fff}
+@media(max-width:900px){.country-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.faq-hero{padding:34px 0 28px}}
+@media(max-width:600px){.faq-content{padding-top:18px}.faq-section{padding:18px 14px;border-radius:16px}.faq-section-head{gap:11px}.faq-section-head>span{flex-basis:36px;height:36px;border-radius:11px}.faq-list summary{padding:14px 14px 14px 42px}.faq-list details p{padding:0 14px 16px;font-size:.96rem}.country-cards{grid-template-columns:1fr}.faq-hero h1{font-size:1.8rem}.faq-lead{font-size:.98rem}.faq-sources{padding:20px 16px}.faq-jump a{font-size:.88rem;padding:8px 11px}}
