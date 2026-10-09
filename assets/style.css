@@ -143,3 +143,9 @@ body:not(.homepage) .topbar,body:not(.homepage) .header{display:none!important}
 .article-library .closing-cta{margin-top:38px}
 @media(max-width:900px){.article-library .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.article-library .library-intro{padding:24px}}
 @media(max-width:600px){.article-library .grid{grid-template-columns:1fr}.article-library{padding:26px 0 38px}.article-library .card{min-height:0;padding:21px}}
+
+
+/* عرض قائمة الروابط الرئيسية في الصفحة الرئيسية فقط حسب طلب الموقع */
+body:not(.homepage) .header .links,
+body:not(.homepage) .header .nav-toggle{display:none!important}
+body:not(.homepage) .header .nav{min-height:76px;justify-content:flex-start}
