@@ -6,3 +6,34 @@
 .whatsapp{display:none!important}
 .brand img{width:72px;height:72px}
 @media(max-width:600px){.brand img{width:56px;height:56px}}
+
+/* SehaHer visual identity v2 — consistent, restrained, responsive */
+:root{--ink:#183044;--muted:#607789;--brand:#1768ac;--brand-dark:#104c80;--teal:#12877f;--mint:#e9f6f3;--paper:#f4f8fb;--line:#d8e4ed;--shadow:0 16px 42px rgba(18,55,82,.09);--radius:22px}
+body{background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,Arial,sans-serif}
+.topbar{letter-spacing:.01em}
+.header{box-shadow:0 4px 20px rgba(20,49,72,.035)}
+.nav{gap:clamp(14px,2vw,28px)}
+.brand{min-width:84px}
+.brand img{width:76px!important;height:76px!important;max-width:76px;object-fit:contain;flex-shrink:0}
+.brand span{letter-spacing:-.02em}
+.links{gap:clamp(9px,1.15vw,18px)}
+.links a{transition:color .18s ease}
+.nav-cta{box-shadow:0 5px 14px rgba(23,104,172,.15)}
+.hero{padding:clamp(48px,6vw,82px) 0;background:radial-gradient(ellipse at 82% 15%,rgba(18,135,127,.07),transparent 35%),linear-gradient(125deg,#f0f6fb 0%,#fff 55%,#edf8f6 100%)}
+.hero-grid{gap:clamp(28px,4vw,58px)}
+.hero h1{letter-spacing:-.035em;line-height:1.34;max-width:800px}
+.hero-lead{color:#536d80;line-height:1.95}
+.hero-panel{border-radius:26px;box-shadow:0 18px 50px rgba(25,61,88,.10);border-color:#d5e4ec}
+.panel-mark{font-size:1.7rem}
+.btn{border-radius:13px}
+.product-card,.step{border-radius:20px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.product-card:hover,.step:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(24,55,82,.09);border-color:#c4dbe8}
+.section-heading h2,.article h1,.article h2{letter-spacing:-.02em}
+.article{box-shadow:0 14px 42px rgba(24,55,82,.065);border-radius:24px}
+.article h2{color:#174c72;border-bottom-color:#dce8ef}
+.article img{width:auto;max-width:100%;height:auto;max-height:460px;object-fit:contain}
+img,svg{max-width:100%}
+a.whatsapp,.whatsapp, .whatsapp svg{display:none!important;visibility:hidden!important;pointer-events:none!important}
+.whatsapp-float{z-index:80;left:20px;bottom:20px;padding:10px 15px;box-shadow:0 8px 24px rgba(20,43,69,.12);border-color:#c7e2d8}
+@media(max-width:900px){.brand img{width:64px!important;height:64px!important;max-width:64px}.hero{padding:46px 0}.hero-grid{gap:26px}}
+@media(max-width:600px){.brand img{width:54px!important;height:54px!important;max-width:54px}.hero{padding:38px 0}.hero h1{font-size:clamp(1.85rem,8vw,2.35rem);line-height:1.42}.hero-panel{padding:22px}.whatsapp-float{left:12px;bottom:12px;padding:9px 12px}}
