@@ -236,3 +236,10 @@ body.landing-no-header .topbar,body.landing-no-header .header{display:none!impor
  .faq-list details p{padding:0 16px 17px}
  .country-cards{grid-template-columns:1fr}
 }
+
+/* إيقاف أيقونة واتساب العائمة على مستوى الموقع */
+a.whatsapp-float{display:none!important}
+.faq-contact-banner{padding:18px 0 8px;background:#fbf9f6}
+.faq-contact-banner .container{max-width:1020px}
+.faq-contact-banner a{display:block;max-width:980px;margin-inline:auto}
+.faq-contact-banner img{display:block;width:100%;height:auto;border-radius:18px}
