@@ -1,0 +1,4 @@
+# Cloudflare Pages route fallback for the services page
+/services /services/index.html 200
+/services/ /services/index.html 200
+/services.html /services/index.html 301
