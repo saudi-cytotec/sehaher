@@ -252,3 +252,7 @@ a.whatsapp-float{display:none!important}
 .home-hero-banner{max-width:1200px;margin:20px auto 28px;padding:0 18px}
 .home-hero-banner img{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 10px 28px rgba(10,53,75,.12)}
 @media(max-width:640px){.site-contact-banner{margin:24px auto 12px;padding:0 10px}.site-contact-banner img,.home-hero-banner img{border-radius:12px}.home-hero-banner{margin:12px auto 20px;padding:0 10px}}
+
+/* القائمة الرئيسية تظهر في الصفحة الرئيسية فقط حسب طلب الموقع */
+.topbar,.header{display:none!important}
+body.homepage .topbar,body.homepage .header{display:block!important}
