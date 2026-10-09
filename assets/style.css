@@ -6,3 +6,44 @@
 .whatsapp{display:none!important}
 .brand img{width:72px;height:72px}
 @media(max-width:600px){.brand img{width:56px;height:56px}}
+
+
+/* SehaHer clean editorial redesign — 2026-10-10 */
+:root{--ink:#203b43;--muted:#687d80;--brand:#28766e;--brand-dark:#1c5953;--teal:#28766e;--mint:#eaf4f0;--paper:#faf9f6;--line:#e2e7e2;--white:#fff;--warm:#f4eee5;--shadow:0 14px 38px rgba(31,61,58,.07);--radius:18px}
+body{background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.9}
+.topbar{background:#203b43;color:#e9f2ee}
+.header{background:rgba(250,249,246,.97);border-bottom:1px solid #e2e7e2;box-shadow:0 3px 14px rgba(31,61,58,.035)}
+.nav{gap:clamp(12px,1.8vw,24px)}
+.brand{gap:10px}.brand img{width:58px;height:58px;object-fit:contain}.brand span{font-size:1.08rem;letter-spacing:-.02em}
+.links a{font-size:.88rem;color:#39565a}.links a:hover{color:var(--brand)}
+.nav-cta,.btn.primary{background:var(--brand);box-shadow:none}
+.hero{background:linear-gradient(135deg,#f2f5ef 0%,#fffdf9 60%,#edf5f1 100%);border-bottom:1px solid var(--line);padding:clamp(44px,6vw,78px) 0}
+.hero:before{border-color:rgba(40,118,110,.055)}
+.hero-grid{gap:clamp(24px,4vw,50px)}
+.hero h1{font-size:clamp(2rem,4vw,3.1rem);line-height:1.38;letter-spacing:-.035em}
+.hero-lead{color:#526c6d;line-height:2}
+.eyebrow{color:var(--brand)}
+.hero-panel,.article{border:1px solid #e4e8e2;border-radius:20px;box-shadow:var(--shadow)}
+.hero-panel{padding:clamp(22px,3vw,34px)}
+.panel-mark,.product-icon{background:var(--mint);color:var(--brand);border-radius:14px}
+.btn{border-radius:10px;box-shadow:none;transition:background .18s ease,transform .18s ease}
+.btn.primary:hover{background:var(--brand-dark)}
+.btn.secondary{border-color:#d7e2dc;color:var(--brand)}
+.section{padding:clamp(48px,6vw,76px) 0}
+.section:nth-of-type(even){background:#fff}
+.section-heading{margin-bottom:28px}
+.product-grid,.steps{gap:16px}
+.product-card,.step{border-radius:16px;border-color:#e1e7e1;box-shadow:0 3px 14px rgba(31,61,58,.025);padding:clamp(20px,2.5vw,28px)}
+.product-card:hover,.step:hover{border-color:#c8d9d1;box-shadow:0 10px 28px rgba(31,61,58,.07);transform:translateY(-2px)}
+.article{background:#fff;padding:clamp(24px,5vw,58px)}
+.article h1{line-height:1.4;letter-spacing:-.025em}
+.article h2{color:#2c615b;border-bottom-color:#e4e9e3;margin-top:1.8em}
+.notice{background:#f0f6f1;border-right-color:var(--brand);color:#405f5b}
+.closing-cta{background:#203b43;padding:clamp(30px,4vw,46px) 0}
+.closing-cta p{color:#dce9e3}
+.footer{background:#172f35}
+.whatsapp{display:none!important;visibility:hidden!important;pointer-events:none!important}
+.whatsapp svg{display:none!important;width:0!important;height:0!important}
+.whatsapp-float{z-index:1000;left:18px;right:auto;bottom:18px;background:#fff;color:#286b5c;border:1px solid #c9ded3;border-radius:999px;padding:10px 14px;box-shadow:0 5px 18px rgba(24,54,48,.12);font-size:.83rem}
+@media(max-width:900px){.brand img{width:54px;height:54px}.nav{min-height:70px}}
+@media(max-width:600px){.brand img{width:48px;height:48px}.hero{padding:38px 0}.hero h1{font-size:clamp(1.8rem,8vw,2.35rem)}.article{padding:22px 18px}.whatsapp-float{left:12px;bottom:12px}}
