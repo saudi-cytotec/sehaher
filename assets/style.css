@@ -562,3 +562,32 @@ body.homepage{background:#f7faff;color:#183957}
  .homepage .step:has(>span:empty){padding:18px 16px}
  .faq-hub .faq-section-head{display:block}
 }
+
+
+/* Final fix: homepage FAQ cards are stacked, never two-column */
+.homepage #purchase-faq .steps .step{
+ display:block!important;
+ width:100%;
+ min-width:0;
+ padding:22px 24px;
+}
+.homepage #purchase-faq .steps .step h3{
+ display:block;
+ width:100%;
+ margin:0 0 8px;
+ line-height:1.6;
+ overflow-wrap:break-word;
+}
+.homepage #purchase-faq .steps .step p{
+ display:block;
+ width:100%;
+ margin:0;
+ padding:0;
+ grid-column:auto!important;
+}
+.homepage .step>span{display:none!important}
+.homepage .product-icon{display:none!important}
+@media(max-width:600px){
+ .homepage #purchase-faq .steps .step{padding:18px 16px}
+ .homepage #purchase-faq .steps .step h3{font-size:1.05rem}
+}
