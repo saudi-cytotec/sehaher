@@ -649,3 +649,12 @@ body.homepage #saudi-cities .topic-grid { gap: 12px; }
 body.homepage .home-hero-banner { margin-bottom: 0 !important; }
 body.homepage .hero { padding-top: 28px !important; }
 body.homepage .hero-lead { max-width: 850px !important; }
+
+
+/* Fix Arabic footer brand alignment and prevent the name/tagline from wrapping oddly */
+.footer-reference .footer-brand-row{direction:rtl;display:flex;align-items:center;justify-content:flex-start;gap:12px}
+.footer-reference .footer-brand-row img{display:block!important;width:54px!important;height:54px!important;max-width:54px!important;object-fit:contain;flex:0 0 54px;margin:0!important;padding:0!important}
+.footer-reference .footer-brand-row>div{min-width:0;text-align:right;direction:rtl}
+.footer-reference .footer-brand-name{white-space:nowrap;display:block;background:transparent!important;padding:0!important;letter-spacing:normal;unicode-bidi:plaintext}
+.footer-reference .footer-brand-tagline{white-space:nowrap;display:block;background:transparent!important;padding:0!important;unicode-bidi:plaintext}
+@media(max-width:600px){.footer-reference .footer-brand-row img{width:48px!important;height:48px!important;max-width:48px!important;flex-basis:48px}}
