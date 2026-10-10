@@ -325,3 +325,29 @@ body.homepage .topbar,body.homepage .header{display:block!important}
 .doctor-contact-number{direction:ltr;color:#31516b;font-size:.9rem;font-weight:800}
 .doctor-contact-note{margin-top:14px!important;padding-top:12px;border-top:1px solid #dcebf4;color:#667b8e!important;font-size:.82rem}
 @media(max-width:700px){.doctor-contact-card{grid-template-columns:1fr;gap:18px;padding:22px;border-radius:16px}.doctor-contact-actions{align-items:stretch;min-width:0}.doctor-contact-button{width:100%;white-space:normal}.doctor-contact-number{text-align:center}}
+
+
+/* Editorial article layout refresh — readable measure, calm rhythm, lightweight CSS */
+.article-content{padding-block:clamp(28px,4vw,54px);background:#f6f9fc}
+.article-content>.container{width:min(860px,calc(100% - 36px));margin-inline:auto;padding:clamp(22px,4vw,42px);border:1px solid #e3ebf4;border-radius:18px;background:#fff;box-shadow:0 6px 22px rgba(18,55,91,.045)}
+.article-content>.container>h1{max-width:24ch;margin:0 0 22px;font-size:clamp(1.8rem,3vw,2.45rem);line-height:1.45;letter-spacing:0}
+.article-content>.container>h2{margin:2em 0 .7em;padding:0 14px 10px;border-bottom:1px solid #e2ebf4;border-right:4px solid #168bd2;color:#104d87;font-size:clamp(1.25rem,2vw,1.65rem);line-height:1.55}
+.article-content>.container>h3{margin:1.5em 0 .55em;color:#17629d;font-size:1.12rem;line-height:1.6}
+.article-content>.container>p,.article-content>.container>li,.article-content>.container>ul,.article-content>.container>ol{font-size:1rem;line-height:2.05;color:#334b65}
+.article-content>.container>p{margin:0 0 1.15rem}
+.article-content>.container ul,.article-content>.container ol{padding-inline-start:1.4rem;margin:0 0 1.3rem}
+.article-content>.container li{margin-bottom:.5rem}
+.article-content>.container a{font-weight:700;text-decoration:underline;text-decoration-color:#c8def0;text-underline-offset:3px}
+.article-content>.container img,.article-content>.container figure{max-width:100%;margin:24px auto}
+.article-content>.container blockquote,.article-content>.container .notice{padding:16px 18px;border:1px solid #dceaf5;border-right:4px solid #168bd2;border-radius:12px;background:#f5faff}
+.article-content .container .small,.article-content .container figcaption{color:#657b91;font-size:.85rem}
+.article-content .container table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+.article-content .container th,.article-content .container td{padding:10px 12px;border:1px solid #e1eaf3;text-align:right}
+.article-content .container h2+ p{margin-top:0}
+@media(max-width:640px){
+ .article-content{padding-block:20px}
+ .article-content>.container{width:calc(100% - 24px);padding:20px 17px;border-radius:14px}
+ .article-content>.container>h1{font-size:1.65rem;line-height:1.5}
+ .article-content>.container>h2{font-size:1.25rem;margin-top:1.7em}
+ .article-content>.container>p,.article-content>.container>li{font-size:.98rem;line-height:2}
+}
