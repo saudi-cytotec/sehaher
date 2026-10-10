@@ -283,3 +283,45 @@ body.homepage .topbar,body.homepage .header{display:block!important}
 .topic-card .text-link{display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:14px;border-top:1px solid #e7eff7;width:100%;font-weight:800;color:#0756a5}
 .topic-card .text-link:hover{color:#078b4e}
 @media(max-width:700px){.commercial-search{padding-block:32px}.topic-grid{gap:14px}.topic-card{padding:20px;border-radius:16px}}
+
+
+/* SehaHer unified header: premium medical editorial identity */
+.topbar,.header{display:block!important}
+.topbar{background:linear-gradient(100deg,#082f59 0%,#075a83 58%,#087c86 100%);color:#eaf7ff;font-size:.8rem;letter-spacing:.01em}
+.topbar .container,.topbar-inner{min-height:34px;padding-block:6px}
+.header{background:rgba(255,255,255,.98);border-bottom:1px solid #dce9f3;box-shadow:0 8px 24px rgba(8,48,86,.055)}
+.nav{display:flex;flex-wrap:wrap;min-height:0;padding-block:12px 0;gap:10px 22px}
+.brand{min-height:54px;gap:12px;color:#083d7b}
+.brand img{width:52px;height:52px;padding:4px;border:1px solid #d9eaf6;border-radius:15px;background:#f5fbff}
+.brand span{font-size:1.2rem;font-weight:900;letter-spacing:.01em}
+.links{flex:1 0 100%;justify-content:center;flex-wrap:wrap;gap:4px 8px;padding:8px 0 10px;border-top:1px solid #edf3f8}
+.links a{min-height:38px;padding:8px 13px;border:1px solid transparent;border-radius:10px;color:#244765;font-size:.86rem;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.links a:hover,.links a:focus-visible{background:#edf7ff;border-color:#d6eaf9;color:#0756a5}
+.links a[href="/cytotec-saudi-arabia/"]{display:inline-flex}
+.nav-toggle{display:none}
+@media(max-width:900px){
+ .nav{display:flex;flex-wrap:nowrap;min-height:72px;padding-block:8px;gap:12px}
+ .brand{margin-inline-end:auto;min-height:48px}
+ .brand img{width:46px;height:46px}
+ .nav-toggle{display:block;border-color:#d7e7f4;border-radius:12px;background:#f4faff;color:#083d7b}
+ .links{display:none;position:absolute;top:100%;right:0;left:0;z-index:100;align-items:stretch;gap:3px;padding:12px 18px 18px;background:#fff;border:1px solid #e0ebf5;border-radius:0 0 16px 16px;box-shadow:0 16px 32px rgba(8,48,86,.12);flex-direction:column;flex-wrap:nowrap}
+ .links.is-open{display:flex}
+ .links a{justify-content:flex-start;min-height:42px;padding:9px 12px;border:0;border-bottom:1px solid #edf3f8;border-radius:8px;font-size:.93rem}
+ .links a[href="/cytotec-saudi-arabia/"]{display:flex}
+}
+@media(min-width:901px){.nav{position:relative}.links{order:3}.brand{order:1}}
+/* Contact rectangle: clear CTA without replacing crawlable text */
+.doctor-contact-card{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:22px;margin:28px 0;padding:clamp(22px,3.2vw,36px);border:1px solid #c8e2f2;border-radius:20px;background:linear-gradient(112deg,#f2faff 0%,#fff 56%,#eaf8f5 100%);box-shadow:0 12px 30px rgba(8,61,123,.08)}
+.doctor-contact-card:before{content:"";position:absolute;inset-block:0;right:0;width:5px;background:linear-gradient(#168bd2,#08a45b)}
+.doctor-contact-copy{min-width:0}
+.doctor-contact-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;color:#087e91;font-size:.8rem;font-weight:900}
+.doctor-contact-kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:#08a45b;box-shadow:0 0 0 4px #dff5eb}
+.doctor-contact-card h2{margin:0 0 9px;color:#083d7b;font-size:clamp(1.3rem,2.5vw,1.8rem);line-height:1.45}
+.doctor-contact-card p{margin:0;color:#4b637b;line-height:1.9}
+.doctor-contact-name{display:block;margin-top:10px;color:#0756a5;font-weight:900}
+.doctor-contact-actions{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;min-width:190px}
+.doctor-contact-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 20px;border:0;border-radius:12px;background:#08a45b;color:#fff!important;font-weight:900;box-shadow:0 8px 18px rgba(8,164,91,.18);white-space:nowrap}
+.doctor-contact-button:hover{background:#078b4e;transform:translateY(-1px)}
+.doctor-contact-number{direction:ltr;color:#31516b;font-size:.9rem;font-weight:800}
+.doctor-contact-note{margin-top:14px!important;padding-top:12px;border-top:1px solid #dcebf4;color:#667b8e!important;font-size:.82rem}
+@media(max-width:700px){.doctor-contact-card{grid-template-columns:1fr;gap:18px;padding:22px;border-radius:16px}.doctor-contact-actions{align-items:stretch;min-width:0}.doctor-contact-button{width:100%;white-space:normal}.doctor-contact-number{text-align:center}}
