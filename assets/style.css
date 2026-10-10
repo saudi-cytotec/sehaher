@@ -623,3 +623,19 @@ body.homepage .steps .step p {
     padding: 18px 16px !important;
   }
 }
+
+
+/* 2026-10-10: homepage identity aligned to the Saudi-first educational topic cluster. */
+body.homepage .hero-grid { grid-template-columns: minmax(0, 1fr) !important; }
+body.homepage .hero-panel { display: none !important; }
+body.homepage #products,
+body.homepage #product-details,
+body.homepage #commercial-search,
+body.homepage #saudi-coverage,
+body.homepage #purchase-faq,
+body.homepage #before-contact,
+body.homepage .closing-cta { display: none !important; }
+body.homepage #saudi-cities { display: block !important; }
+body.homepage .home-hero-banner { margin-bottom: 0 !important; }
+body.homepage .hero { padding-top: 28px !important; }
+body.homepage .hero-lead { max-width: 850px !important; }
