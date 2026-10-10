@@ -660,5 +660,6 @@ body.homepage .hero-lead { max-width: 850px !important; }
 @media(max-width:600px){.footer-reference .footer-brand-row img{width:48px!important;height:48px!important;max-width:48px!important;flex-basis:48px}}
 
 
-/* 2026-10-10: show the full homepage banner artwork without cropping the contact strip. */
-body.homepage .home-hero-banner img { height: auto !important; aspect-ratio: auto !important; object-fit: contain !important; object-position: center !important; }
+/* Reserve the homepage banner's final dimensions before the image loads to reduce layout shift. */
+body.homepage .home-hero-banner { width: 100%; }
+body.homepage .home-hero-banner img { display: block !important; width: 100% !important; max-width: 100%; height: auto !important; aspect-ratio: 1672 / 941 !important; object-fit: contain !important; object-position: center !important; }
