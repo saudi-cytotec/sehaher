@@ -628,14 +628,24 @@ body.homepage .steps .step p {
 /* 2026-10-10: homepage identity aligned to the Saudi-first educational topic cluster. */
 body.homepage .hero-grid { grid-template-columns: minmax(0, 1fr) !important; }
 body.homepage .hero-panel { display: none !important; }
+/* Keep the full topical cluster visible; Saudi city/country links lead the page. */
 body.homepage #products,
 body.homepage #product-details,
 body.homepage #commercial-search,
 body.homepage #saudi-coverage,
 body.homepage #purchase-faq,
 body.homepage #before-contact,
-body.homepage .closing-cta { display: none !important; }
+body.homepage .closing-cta { display: block !important; }
 body.homepage #saudi-cities { display: block !important; }
+body.homepage #saudi-cities .topic-grid,
+body.homepage #saudi-cities .product-grid,
+body.homepage .topic-grid,
+body.homepage .product-grid,
+body.homepage .info-layout,
+body.homepage .steps { grid-template-columns: minmax(0,1fr) !important; }
+body.homepage #saudi-cities .topic-card,
+body.homepage .topic-card { width: 100%; }
+body.homepage #saudi-cities .topic-grid { gap: 12px; }
 body.homepage .home-hero-banner { margin-bottom: 0 !important; }
 body.homepage .hero { padding-top: 28px !important; }
 body.homepage .hero-lead { max-width: 850px !important; }
