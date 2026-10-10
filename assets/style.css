@@ -256,3 +256,6 @@ a.whatsapp-float{display:none!important}
 /* القائمة الرئيسية تظهر في الصفحة الرئيسية فقط حسب طلب الموقع */
 .topbar,.header{display:none!important}
 body.homepage .topbar,body.homepage .header{display:block!important}
+
+/* صورة صغيرة داخل لوحة التأكيد أسفل البانر الرئيسي */
+.hero-panel-image{display:block;width:min(100%,180px);height:auto;object-fit:contain;margin:0 auto 16px;border-radius:12px}
