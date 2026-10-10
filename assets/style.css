@@ -351,3 +351,18 @@ body.homepage .topbar,body.homepage .header{display:block!important}
  .article-content>.container>h2{font-size:1.25rem;margin-top:1.7em}
  .article-content>.container>p,.article-content>.container>li{font-size:.98rem;line-height:2}
 }
+
+
+/* Footer polish inspired by the reference: high contrast, compact columns, clear hierarchy */
+.footer{padding:38px 0 18px;background:#050b1d;color:#d7e4f3;border-top:1px solid #13213b}
+.footer .footer-grid{grid-template-columns:1.05fr 1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.footer h3{margin:0 0 16px;color:#fff;font-size:1.05rem;font-weight:900}
+.footer p{margin:0 0 10px;color:#d1deef;font-size:.9rem;line-height:1.9}
+.footer .small{color:#91a8c5;font-size:.8rem}
+.footer .footer-grid a,.footer .footer-grid>div>a,.footer .footer-grid>div>p>a{color:#c8d8ed;font-size:.88rem;font-weight:600;text-decoration:none;transition:color .18s ease}
+.footer .footer-grid a:hover,.footer .footer-grid a:focus-visible{color:#36d6ff;text-decoration:underline;text-underline-offset:3px}
+.footer .footer-grid>div>p{margin:0 0 9px}
+.footer .footer-bottom{margin-top:28px;padding-top:16px;border-top:1px solid #1b2941;color:#9eb2cc}
+.footer a:focus-visible{outline:2px solid #36d6ff;outline-offset:3px;border-radius:3px}
+@media(max-width:900px){.footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
+@media(max-width:600px){.footer{padding-top:30px}.footer .footer-grid{grid-template-columns:1fr;gap:22px}.footer h3{margin-bottom:10px}.footer .footer-bottom{display:block}.footer .footer-bottom span{display:block;margin-top:7px}}
