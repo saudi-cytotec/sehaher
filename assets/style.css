@@ -391,3 +391,101 @@ body.homepage .topbar,body.homepage .header{display:block!important}
 .footer-reference a:focus-visible{outline:2px solid #35d8ff;outline-offset:3px;border-radius:3px}
 @media(max-width:900px){.footer-reference .footer-disclaimer{margin-inline:18px}.footer-reference .footer-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;padding-inline:20px}}
 @media(max-width:600px){.footer-reference{padding-top:20px}.footer-reference .footer-disclaimer{margin:0 12px 25px;padding:14px 15px;font-size:.82rem}.footer-reference .footer-reference-grid{grid-template-columns:1fr;gap:23px;padding-inline:18px}.footer-reference .footer-brand-row img{width:48px;height:48px}.footer-reference .footer-bottom{display:block;margin-inline:18px}.footer-reference .footer-bottom-links{margin-top:12px}}
+
+
+/* Homepage redesign: premium editorial layout with mobile-first spacing */
+body.homepage{background:#f7faff;color:#183957}
+.homepage .home-hero-banner{width:min(1440px,calc(100% - 48px));margin:24px auto 0;overflow:hidden;border:1px solid #e0ebf5;border-radius:24px;background:#eaf5ff;box-shadow:0 14px 38px rgba(9,49,86,.08)}
+.homepage .home-hero-banner img{display:block;width:100%;height:clamp(220px,29vw,390px);object-fit:cover;object-position:center}
+.homepage .hero{margin:0;background:linear-gradient(135deg,#f1f9ff 0%,#fff 48%,#eaf8f7 100%);border:0}
+.homepage .hero-grid{width:min(1240px,calc(100% - 64px));min-height:310px;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:clamp(28px,5vw,72px);padding-block:56px}
+.homepage .hero-copy{text-align:right}
+.homepage .hero h1{max-width:18ch;margin-inline:0;font-size:clamp(2rem,3.4vw,3.25rem);line-height:1.28;letter-spacing:-.025em}
+.homepage .hero-lead{max-width:650px;margin-inline:0;font-size:1.06rem;line-height:2;color:#4c637d}
+.homepage .hero-actions{justify-content:flex-start;margin-top:24px}
+.homepage .hero .btn{min-height:52px;border-radius:12px;padding-inline:24px}
+.homepage .trust-line{justify-content:flex-start;gap:10px 18px;margin-top:15px}
+.homepage .section{padding-block:clamp(44px,6vw,78px)}
+.homepage .section>.container,.homepage .process-section>.container{width:min(1200px,calc(100% - 64px))}
+.homepage .section-heading{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:28px}
+.homepage .section-heading h2,.homepage #saudi-coverage h2,.homepage #information h2{margin-bottom:0;font-size:clamp(1.55rem,2.5vw,2.2rem);line-height:1.4}
+.homepage .section-heading>p{max-width:470px;margin:0;color:#62758b;font-size:.96rem;line-height:1.9}
+.homepage #products,.homepage #commercial-search{background:#f7faff}
+.homepage .product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.homepage .product-card{position:relative;min-width:0;padding:26px;border:1px solid #e0eaf4;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(13,54,91,.045);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.homepage .product-card:hover{transform:translateY(-3px);border-color:#b9d9ee;box-shadow:0 15px 34px rgba(13,54,91,.09)}
+.homepage .product-icon{display:grid;place-items:center;width:48px;height:48px;margin-bottom:18px;border:1px solid #cfe8f7;border-radius:14px;background:#eef8ff;color:#0878bf;font-size:.9rem;font-weight:900}
+.homepage .product-tag{display:inline-block;margin-bottom:8px;color:#087f8c;font-size:.76rem;font-weight:900}
+.homepage .product-card h3{font-size:1.2rem;line-height:1.5}
+.homepage .product-card p{color:#5a6f85;line-height:1.9;font-size:.94rem}
+.homepage .product-card>a:last-child{display:inline-flex;align-items:center;gap:8px;margin-top:8px;color:#0756a5;font-weight:900}
+.homepage .commercial-details{background:#fff}
+.homepage .info-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,54px);align-items:start}
+.homepage .commercial-details .info-layout>div,.homepage #order-policy .info-layout>div,.homepage #saudi-coverage .info-layout>div,.homepage #before-contact .info-layout>div{min-width:0}
+.homepage .commercial-details .info-layout h3,.homepage #order-policy .info-layout h3,.homepage #before-contact h3{margin-top:0;color:#123f70;font-size:1.2rem}
+.homepage .commercial-details .info-layout p,.homepage #order-policy .info-layout p,.homepage #saudi-coverage p,.homepage #before-contact p{color:#506780;font-size:.97rem;line-height:2}
+.homepage .commercial-search{background:linear-gradient(180deg,#eff8ff,#f8fbff)}
+.homepage .topic-card{padding:24px}
+.homepage .topic-card h3 a{color:#123f70}
+.homepage #saudi-coverage{background:#fff}
+.homepage #saudi-coverage .info-layout{padding:clamp(24px,4vw,44px);border:1px solid #dceaf5;border-radius:22px;background:linear-gradient(120deg,#f2f9ff,#fff);box-shadow:0 10px 30px rgba(13,54,91,.04)}
+.homepage .process-section{padding:clamp(46px,6vw,78px) 0;background:#f5f9fd}
+.homepage .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.homepage .step{min-width:0;padding:24px;border:1px solid #e0eaf4;border-radius:17px;background:#fff;box-shadow:0 6px 20px rgba(13,54,91,.035)}
+.homepage .step>span{display:grid;place-items:center;width:40px;height:40px;margin-bottom:15px;border-radius:12px;background:#e7f5ff;color:#0878bf;font-weight:900}
+.homepage .step h3{font-size:1.08rem}
+.homepage .step p{margin:0;color:#5a6f85;font-size:.93rem;line-height:1.9}
+.homepage #order-policy{background:#fff}
+.homepage #information{background:#f4f9fd}
+.homepage .link-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.homepage .link-list a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;padding:14px 16px;border:1px solid #dce9f4;border-radius:12px;background:#fff;color:#164a7a;font-size:.9rem;font-weight:800}
+.homepage .link-list a:hover{border-color:#9bcce9;background:#fafdff}
+.homepage .closing-cta{padding:clamp(32px,5vw,58px) 0;background:linear-gradient(115deg,#083d7b,#075b85 65%,#087c82);color:#fff}
+.homepage .closing-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;width:min(1200px,calc(100% - 64px))}
+.homepage .closing-inner h2{color:#fff;font-size:clamp(1.5rem,2.4vw,2rem)}
+.homepage .closing-inner p{margin:0;color:#e1f2ff;line-height:1.9}
+.homepage .closing-inner .btn{flex:0 0 auto;background:#fff;color:#0756a5;border-radius:12px}
+.homepage #before-contact{background:#fff}
+.homepage .whatsapp-float{box-shadow:0 8px 24px rgba(8,164,91,.28)}
+@media(max-width:900px){
+ .homepage .home-hero-banner{width:calc(100% - 32px);margin-top:16px;border-radius:18px}
+ .homepage .home-hero-banner img{height:clamp(190px,32vw,280px)}
+ .homepage .hero-grid{width:calc(100% - 40px);grid-template-columns:1fr;min-height:0;gap:16px;padding-block:38px}
+ .homepage .hero-copy{text-align:center}
+ .homepage .hero h1{max-width:24ch;margin-inline:auto;font-size:clamp(1.9rem,4.6vw,2.6rem)}
+ .homepage .hero-lead{margin-inline:auto}
+ .homepage .hero-actions,.homepage .trust-line{justify-content:center}
+ .homepage .section>.container,.homepage .process-section>.container{width:calc(100% - 40px)}
+ .homepage .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .homepage .section-heading{align-items:start;flex-direction:column;gap:10px}
+ .homepage .closing-inner{width:calc(100% - 40px)}
+}
+@media(max-width:600px){
+ .homepage .home-hero-banner{width:calc(100% - 24px);margin-top:12px;border-radius:14px}
+ .homepage .home-hero-banner img{height:auto;aspect-ratio:1.45;object-fit:cover}
+ .homepage .hero-grid{width:calc(100% - 32px);padding-block:30px}
+ .homepage .hero h1{font-size:clamp(1.7rem,7vw,2.15rem);line-height:1.45}
+ .homepage .hero-lead{font-size:.96rem;line-height:1.9}
+ .homepage .hero-actions{display:grid;grid-template-columns:1fr;width:100%;gap:10px;margin-top:20px}
+ .homepage .hero-actions .btn{width:100%;min-height:50px}
+ .homepage .trust-line{gap:7px 12px;font-size:.75rem}
+ .homepage .section{padding-block:38px}
+ .homepage .section>.container,.homepage .process-section>.container{width:calc(100% - 28px)}
+ .homepage .section-heading{margin-bottom:20px}
+ .homepage .section-heading h2,.homepage #saudi-coverage h2,.homepage #information h2{font-size:1.45rem;line-height:1.5}
+ .homepage .section-heading>p{font-size:.9rem}
+ .homepage .product-grid,.homepage .info-layout,.homepage .steps{grid-template-columns:1fr;gap:14px}
+ .homepage .product-card{padding:21px;border-radius:15px}
+ .homepage .product-icon{width:42px;height:42px;margin-bottom:13px}
+ .homepage .product-card h3{font-size:1.1rem}
+ .homepage .product-card p{font-size:.92rem}
+ .homepage #saudi-coverage .info-layout{padding:20px 17px;border-radius:16px}
+ .homepage .process-section{padding:38px 0}
+ .homepage .step{padding:20px;border-radius:15px}
+ .homepage .link-list{grid-template-columns:1fr}
+ .homepage .closing-cta{padding:34px 0}
+ .homepage .closing-inner{width:calc(100% - 32px);flex-direction:column;align-items:stretch;gap:18px;text-align:right}
+ .homepage .closing-inner .btn{width:100%;white-space:normal}
+ .homepage #before-contact .section-heading{margin-bottom:18px}
+}
+@media(prefers-reduced-motion:reduce){.homepage *{scroll-behavior:auto!important;transition:none!important}}
