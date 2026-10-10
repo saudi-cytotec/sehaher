@@ -539,3 +539,26 @@ body.homepage{background:#f7faff;color:#183957}
  .homepage .closing-inner{text-align:right}
  .homepage .closing-inner .btn{align-self:stretch;min-width:0}
 }
+
+
+/* Remove decorative letter/number badges site-wide and prevent cramped FAQ headings */
+.product-icon,
+.step>span,
+.topic-card .product-icon,
+.step .step-number,
+.topic-card .step-number{font-size:0!important;color:transparent!important}
+.product-icon:empty,
+.step>span:empty{display:none!important}
+.homepage .product-card .product-icon:empty{float:none;width:0;height:0;margin:0;padding:0;border:0;background:transparent}
+.homepage .step:has(>span:empty){display:block!important;padding:22px 24px}
+.homepage .step:has(>span:empty) h3{margin:0 0 8px}
+.homepage .step:has(>span:empty) p{grid-column:auto}
+.faq-hub .faq-section-head>span:empty{display:none}
+.faq-hub .faq-section-head{min-width:0}
+.faq-hub .faq-section-head>div{min-width:0;flex:1}
+.faq-hub .faq-section-head h2{overflow-wrap:anywhere;word-break:normal}
+.faq-hub .faq-section-head p{max-width:100%;overflow-wrap:anywhere}
+@media(max-width:600px){
+ .homepage .step:has(>span:empty){padding:18px 16px}
+ .faq-hub .faq-section-head{display:block}
+}
