@@ -9,3 +9,15 @@ https://sehaher.pages.dev/*
 
 https://:version.sehaher.pages.dev/*
   X-Robots-Tag: noindex
+
+/assets/style.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/image-sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
