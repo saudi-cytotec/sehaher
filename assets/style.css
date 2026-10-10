@@ -366,3 +366,28 @@ body.homepage .topbar,body.homepage .header{display:block!important}
 .footer a:focus-visible{outline:2px solid #36d6ff;outline-offset:3px;border-radius:3px}
 @media(max-width:900px){.footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
 @media(max-width:600px){.footer{padding-top:30px}.footer .footer-grid{grid-template-columns:1fr;gap:22px}.footer h3{margin-bottom:10px}.footer .footer-bottom{display:block}.footer .footer-bottom span{display:block;margin-top:7px}}
+
+
+/* Reference-style footer grid for the Misoprostol page */
+.footer-reference{direction:rtl;background:#030819;color:#dbe8f8;padding:28px 0 20px;border-top:1px solid #17233d}
+.footer-reference .footer-disclaimer{max-width:1215px;margin:0 auto 34px;padding:18px 22px;border-right:3px solid #00b8f4;border-radius:0 0 14px 14px;background:#101a30;color:#dcecff;font-size:.88rem;line-height:2}
+.footer-reference .footer-reference-grid{display:grid;grid-template-columns:1.08fr 1fr 1fr 1.1fr;gap:clamp(22px,3.6vw,52px);align-items:start}
+.footer-reference .footer-brand-row{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.footer-reference .footer-brand-row img{width:54px;height:54px;object-fit:contain;border-radius:8px;flex:0 0 auto}
+.footer-reference .footer-brand-name{display:block;color:#fff!important;font-size:1.15rem!important;font-weight:900!important;line-height:1.4}
+.footer-reference .footer-brand-tagline{display:block;color:#a9c2df;font-size:.76rem;margin-top:3px}
+.footer-reference h3{margin:0 0 16px;padding-right:10px;border-right:2px solid #00bdf2;color:#fff;font-size:.98rem;font-weight:900}
+.footer-reference p{margin:0 0 10px;color:#d1deef;font-size:.84rem;line-height:1.9}
+.footer-reference .footer-reference-grid a{color:#d3e4f8;font-size:.84rem;font-weight:600;text-decoration:none;transition:color .18s ease}
+.footer-reference .footer-reference-grid a:hover,.footer-reference .footer-reference-grid a:focus-visible{color:#35d8ff;text-decoration:underline;text-underline-offset:3px}
+.footer-reference .footer-link{display:block;margin:0 0 8px}
+.footer-reference .footer-cities{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.footer-reference .footer-cities a{display:inline-flex;padding:5px 9px;border:1px solid #243653;border-radius:4px;background:#101b30;font-size:.76rem!important}
+.footer-reference .footer-contact-line{display:flex;align-items:center;gap:8px;margin-top:12px;color:#d1deef;font-size:.82rem}
+.footer-reference .footer-contact-line span{color:#00c8f5;font-size:1rem}
+.footer-reference .footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:34px;padding-top:17px;border-top:1px solid #17233d;color:#9bb0cc;font-size:.78rem}
+.footer-reference .footer-bottom-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.footer-reference .footer-bottom a{color:#b8cce5}
+.footer-reference a:focus-visible{outline:2px solid #35d8ff;outline-offset:3px;border-radius:3px}
+@media(max-width:900px){.footer-reference .footer-disclaimer{margin-inline:18px}.footer-reference .footer-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;padding-inline:20px}}
+@media(max-width:600px){.footer-reference{padding-top:20px}.footer-reference .footer-disclaimer{margin:0 12px 25px;padding:14px 15px;font-size:.82rem}.footer-reference .footer-reference-grid{grid-template-columns:1fr;gap:23px;padding-inline:18px}.footer-reference .footer-brand-row img{width:48px;height:48px}.footer-reference .footer-bottom{display:block;margin-inline:18px}.footer-reference .footer-bottom-links{margin-top:12px}}
