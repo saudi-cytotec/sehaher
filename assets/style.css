@@ -257,5 +257,13 @@ a.whatsapp-float{display:none!important}
 .topbar,.header{display:none!important}
 body.homepage .topbar,body.homepage .header{display:block!important}
 
-/* صورة صغيرة داخل لوحة التأكيد أسفل البانر الرئيسي */
-.hero-panel-image{display:block;width:min(100%,180px);height:auto;object-fit:contain;margin:0 auto 16px;border-radius:12px}
+/* بطاقة معلومات خفيفة بعد البانر: هوية موحدة بلا صورة مكررة */
+.hero-panel{align-self:center;position:relative;background:linear-gradient(145deg,#fff 0%,#f0f8ff 100%);border:1px solid #d9eaf7;border-radius:20px;padding:28px;box-shadow:0 12px 32px rgba(8,61,123,.07);backdrop-filter:none}
+.panel-mark{display:grid;place-items:center;width:46px;height:46px;margin-bottom:14px;border-radius:14px;background:#e1f5eb;color:#078b4e;font-size:1.45rem;font-weight:900}
+.hero-panel h2{font-size:1.25rem;color:#083d7d;margin-bottom:10px}
+.hero-panel p{margin-bottom:14px;color:#4c6382;font-size:.94rem;line-height:1.9}
+.panel-checks{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+.panel-checks li{position:relative;padding:8px 30px 8px 10px;border:1px solid #e1edf6;border-radius:10px;background:rgba(255,255,255,.8);color:#254f75;font-size:.9rem;font-weight:700}
+.panel-checks li:before{content:"✓";position:absolute;right:11px;top:50%;transform:translateY(-50%);color:#079454;font-weight:900}
+.panel-note{margin-top:14px;padding:12px 14px;border-radius:11px;background:#e8f5ff;border-right:3px solid #1682ce;color:#4c6382;font-size:.82rem;line-height:1.8}
+@media(max-width:900px){.hero-panel{max-width:650px}}
