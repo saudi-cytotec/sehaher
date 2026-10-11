@@ -10,8 +10,8 @@ https://sehaher.pages.dev/*
 https://:version.sehaher.pages.dev/*
   X-Robots-Tag: noindex
 
-/assets/style.css
-  Cache-Control: public, max-age=0, must-revalidate
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 
 /sitemap.xml
   Cache-Control: public, max-age=0, must-revalidate
