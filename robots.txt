@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://sehaher.com/sitemap.xml
 Sitemap: https://sehaher.com/image-sitemap.xml
