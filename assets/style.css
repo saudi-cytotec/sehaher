@@ -663,3 +663,9 @@ body.homepage .hero-lead { max-width: 850px !important; }
 /* Reserve the homepage banner's final dimensions before the image loads to reduce layout shift. */
 body.homepage .home-hero-banner { width: 100%; }
 body.homepage .home-hero-banner img { display: block !important; width: 100% !important; max-width: 100%; height: auto !important; aspect-ratio: 1672 / 941 !important; object-fit: contain !important; object-position: center !important; }
+
+
+/* PageSpeed mobile contrast fix: force readable button text/background across cached page variants */
+.btn.primary,.btn.primary:visited{background-color:#075b32!important;color:#fff!important;border-color:#075b32!important}
+.btn.primary:hover,.btn.primary:focus-visible{background-color:#064a29!important;color:#fff!important;border-color:#064a29!important}
+.btn.primary *{color:#fff!important}
