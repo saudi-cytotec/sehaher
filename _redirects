@@ -13,3 +13,8 @@
 # Additional legacy URLs with a relevant current equivalent
 /saudi-arabia /cytotec-saudi-arabia/ 301
 /articles/misoprostol-uses-safety /misoprostol-medical-information/ 301
+
+# Coverage fixes: verified legacy paths with an existing equivalent hub
+/kuwait /cytotec-kuwait/ 301
+/bahrain/abortion-medications /cytotec-bahrain/ 301
+/abortion-medications /pregnancy-termination-medications/ 301
