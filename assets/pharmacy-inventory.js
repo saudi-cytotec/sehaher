@@ -45,8 +45,10 @@
       });
       if (!visible.length) {
         container.appendChild(node("p", "لا توجد حاليًا بيانات سعر ومخزون منشورة ومحدّثة لهذه الدولة. للاستفسار، تواصلي مع صيدليات الهيثم للتحقق من المنتج والفرع وشروط الصرف.", "notice"));
-        var link = node("a", "التواصل مع صيدليات الهيثم");
-        link.href = "/services/";
+        var link = node("a", "للاستفسار عن السعر والتوفر عبر واتساب");
+        link.href = "https://wa.me/966538159747";
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
         link.className = "btn primary";
         container.appendChild(link);
       } else {
