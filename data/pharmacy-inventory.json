@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "feed_updated_at": null,
+  "markets": {
+    "SA": {
+      "country": "السعودية",
+      "currency": "SAR",
+      "locale": "ar-SA",
+      "timezone": "Asia/Riyadh",
+      "pharmacy": "صيدليات الهيثم",
+      "products": []
+    },
+    "AE": {
+      "country": "الإمارات",
+      "currency": "AED",
+      "locale": "ar-AE",
+      "timezone": "Asia/Dubai",
+      "pharmacy": "صيدليات الهيثم",
+      "products": []
+    },
+    "KW": {
+      "country": "الكويت",
+      "currency": "KWD",
+      "locale": "ar-KW",
+      "timezone": "Asia/Kuwait",
+      "pharmacy": "صيدليات الهيثم",
+      "products": []
+    },
+    "BH": {
+      "country": "البحرين",
+      "currency": "BHD",
+      "locale": "ar-BH",
+      "timezone": "Asia/Bahrain",
+      "pharmacy": "صيدليات الهيثم",
+      "products": []
+    },
+    "QA": {
+      "country": "قطر",
+      "currency": "QAR",
+      "locale": "ar-QA",
+      "timezone": "Asia/Qatar",
+      "pharmacy": "صيدليات الهيثم",
+      "products": []
+    },
+    "OM": {
+      "country": "سلطنة عُمان",
+      "currency": "OMR",
+      "locale": "ar-OM",
+      "timezone": "Asia/Muscat",
+      "pharmacy": "صيدليات الهيثم",
+      "products": []
+    }
+  }
+}
