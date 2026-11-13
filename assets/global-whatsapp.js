@@ -1,17 +1,3 @@
-/* Load Tajawal asynchronously so Google Fonts does not block first paint. */
-(()=> {
-  const addLink=(rel,href)=>{
-    if(document.querySelector('link[rel="'+rel+'"][href="'+href+'"]')) return;
-    const l=document.createElement('link'); l.rel=rel; l.href=href; document.head.appendChild(l);
-  };
-  addLink('preconnect','https://fonts.googleapis.com');
-  addLink('preconnect','https://fonts.gstatic.com');
-  const font=document.createElement('link');
-  font.rel='stylesheet';
-  font.href='https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap';
-  document.head.appendChild(font);
-})();
-
 /* Compact, site-wide WhatsApp contact button. */
 (()=>{
   if(document.querySelector('.sehaher-whatsapp-float')) return;
