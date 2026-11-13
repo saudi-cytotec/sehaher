@@ -1,6 +1,6 @@
 # Restrict internal planning documents and inventory feed from public access.
 # These temporary redirects hide the static assets while preserving the files in Git.
- /README.md /404.html 302
+/README.md /404.html 302
 /COMMERCIAL-ARCHITECTURE-AND-REGULATORY-GUARDRAILS-2026-11-12.md /404.html 302
 /CYTOTEC-KEYWORD-MAP-AND-SEO-ARCHITECTURE-2026-11-12.md /404.html 302
 /IMPLEMENTATION-NOTES.md /404.html 302
