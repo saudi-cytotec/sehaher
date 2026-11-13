@@ -839,3 +839,20 @@ p,li{font-weight:500}
 }
 .sehaher-whatsapp-float span{display:none!important;}
 @media(max-width:600px){.sehaher-whatsapp-float{right:14px!important;bottom:14px!important;width:54px!important;height:54px!important;min-width:54px!important;min-height:54px!important;max-width:54px!important;max-height:54px!important}.sehaher-whatsapp-float .sehaher-wa-mark,.sehaher-whatsapp-float svg{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;max-width:28px!important;max-height:28px!important;flex-basis:28px!important}}
+
+/* Accessibility contrast remediation — homepage (PageSpeed 2026-11-13) */
+body.homepage .homepage-trust-item strong{color:#123c62!important}
+body.homepage .homepage-trust-item span{color:#4b5e73!important}
+body.homepage .homepage-feature-card p{color:#4b5e73!important}
+body.homepage .homepage-feature-card a{color:#006b66!important}
+body.homepage .homepage-feature-card .feature-icon{color:#075b56!important}
+body.homepage .article .small,
+body.homepage p.small{color:#52657d!important}
+body.homepage .homepage-about-teaser p{color:#465d73!important}
+body.homepage .homepage-about-teaser .about-proof strong{color:#07556b!important}
+body.homepage .homepage-new-hero .eyebrow{color:#b7fff0!important}
+body.homepage .homepage-new-hero .hero-note{color:#d7e7f4!important}
+body.homepage .homepage-new-hero .hero-lead{color:#e2edf7!important}
+body.homepage .homepage-new-hero .btn.primary{background:#0cc58b!important;color:#042b2c!important;border-color:#0cc58b!important}
+body.homepage .homepage-new-hero .btn.secondary{color:#fff!important}
+body.homepage .seha-note{color:#465d73!important}
