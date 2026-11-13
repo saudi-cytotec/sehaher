@@ -67,3 +67,19 @@
 /locations/doha /cytotec-qatar/ 301
 /locations/manama /cytotec-bahrain/ 301
 /locations/muscat /cytotec-oman/ 301
+
+# Preserve high-value legacy article URLs with a single-hop 301 to the closest current information page.
+/articles/art-1787608290963 /cytotec-saudi-arabia/ 301
+/articles/art-1787608290963/ /cytotec-saudi-arabia/ 301
+/articles/art-1787406335293 /cytotec-prescription-status/ 301
+/articles/art-1787406335293/ /cytotec-prescription-status/ 301
+/articles/art-1787162759904 /cytotec-saudi-arabia/ 301
+/articles/art-1787162759904/ /cytotec-saudi-arabia/ 301
+/articles/art-1787267412626 /cytotec-saudi-arabia/ 301
+/articles/art-1787267412626/ /cytotec-saudi-arabia/ 301
+/articles/art-1787639358807 /cytotec-saudi-arabia/ 301
+/articles/art-1787639358807/ /cytotec-saudi-arabia/ 301
+/articles/art-1788036278430 /cytotec-saudi-arabia/ 301
+/articles/art-1788036278430/ /cytotec-saudi-arabia/ 301
+/articles/art-1787167237782 /cytotec-safety/ 301
+/articles/art-1787167237782/ /cytotec-safety/ 301
