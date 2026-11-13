@@ -855,3 +855,8 @@ body.homepage .homepage-new-hero .hero-lead{color:#e2edf7!important}
 body.homepage .homepage-new-hero .btn.primary{background:#0cc58b!important;color:#042b2c!important;border-color:#0cc58b!important}
 body.homepage .homepage-new-hero .btn.secondary{color:#fff!important}
 body.homepage .seha-note{color:#465d73!important}
+
+/* Use reliable local Arabic/system fonts to eliminate the external Google Fonts request. */
+body,body.homepage,h1,h2,h3,h4,.brand,.links a,.btn,.eyebrow{
+ font-family:Tahoma,Arial,sans-serif!important;
+}
